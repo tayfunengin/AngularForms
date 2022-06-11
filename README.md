@@ -13,7 +13,7 @@ This project contains an example for two types of Angular forms (template driven
 Below is starting page. Pages can be choosen from navigation.
 ![start](https://user-images.githubusercontent.com/71972947/173202052-692a3caa-2a36-49e3-b15b-ba20f5a9fcb3.PNG)
 
-Username, email, gender are required. Form can not be submitted untill all form controls are valid. Reset button becomes active once at least one of the control is filled.
+Username, email, gender are required in TD form. Form can not be submitted untill all form controls are valid. Reset button becomes active once at least one of the form control is filled.
 ![tdForm](https://user-images.githubusercontent.com/71972947/173202061-41a92134-0598-4d1c-b954-1555fdfc907e.PNG)
 
 Once submitted, data is dispalyed on the screen.
