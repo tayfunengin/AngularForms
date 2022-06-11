@@ -1,0 +1,40 @@
+<div class="main">
+  <div class="menu-items">
+    <ul class="list-group">
+      <li class="list-group-item" style="background-color: orange;" (click)="onMenuItemClick(li)" #li hover>MENU ITEM</li>
+      <li class="list-group-item" style="background-color: pink;" (click)="onMenuItemClick(li2)" #li2 hover>MENU ITEM</li>
+      <li class="list-group-item" style="background-color: black;" (click)="onMenuItemClick(li3)" #li3 hover>MENU ITEM</li>
+    </ul>
+  </div>
+  <div class="form">
+    <div class="bg-primary text-center">
+      <h5 class="text-white" style="padding: 2px;">Reactive Form</h5>
+    </div>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div formGroupName="userData">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" formControlName="username" class="form-control">
+          <span *ngIf="!signupForm.get('userData.username').valid && signupForm.get('userData.username').touched"
+            class="help-block">
+            <span *ngIf="signupForm.get('userData.username').errors['nameIsForbidden']">This name is already in use!</span>
+            <span *ngIf="signupForm.get('userData.username').errors['required']">This field is required!</span>
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="email">email</label>
+          <input type="text" id="email" formControlName="email" class="form-control">
+        </div>
+      </div>
+      <div class="radio" *ngFor="let gender of genders">
+        <label>
+          <input type="radio" formControlName="gender" [value]="gender">{{ gender }}
+        </label>
+      </div> 
+      <span *ngIf="!signupForm.valid && signupForm.touched" class="help-block">Please enter valid data!</span>
+      <button class="btn" type="reset" [disabled]="signupForm.untouched" [ngStyle]="{backgroundColor: btnResetColor}" (click)="onReset()">Reset</button>
+      <button class="btn" type="submit" [disabled]="!signupForm.valid" [ngStyle]="{backgroundColor: btnSubmitColor}">Submit</button>
+    </form>
+  </div>
+
+</div>
