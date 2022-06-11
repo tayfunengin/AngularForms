@@ -27,7 +27,7 @@ Once form is filled and submitted, app is directed to main page.
 When clicking on any Menu Item, color of header and all buttons turns into the same color with the color of clicked menu item.
 ![menuClick](https://user-images.githubusercontent.com/71972947/173202094-0936dad6-f4e0-4d64-a0a7-5c567704dc9d.PNG)
 
-Once clicling on any reset button, colors change to their original ones.
+Once clicking on any reset button, colors change to their original ones.
 
 If you type a page which does not exist in url, app is redirected to not-found page.
 ![page not found](https://user-images.githubusercontent.com/71972947/173202112-769ec6ca-4e11-433a-a1d3-c48536731e02.PNG)
