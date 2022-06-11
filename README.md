@@ -16,7 +16,7 @@ Below is starting page. Pages can be choosen from navigation.
 Username, email, gender are required in TD form. Form can not be submitted untill all form controls are valid. Reset button becomes active once at least one of the form control is filled.
 ![tdForm](https://user-images.githubusercontent.com/71972947/173202061-41a92134-0598-4d1c-b954-1555fdfc907e.PNG)
 
-Once submitted, data is dispalyed on the screen.
+Once submitted, data is displayed on the screen.
 ![tdSubmit](https://user-images.githubusercontent.com/71972947/173202071-19a8d116-942b-4d2d-a762-343de5bffa1b.PNG)
 
 In the reactive form, there is a custom validation that doest no accept "admin" as username because it is already taken.
